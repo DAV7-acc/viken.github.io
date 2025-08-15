@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Важный выбор!</title>
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="modal.css">
+  <link rel="icon" href="linkedin-logo.ico" type="image/x-icon">
+</head>
+<body>
+
+  <h1>услышал тебя родной</h1>
+  <p class="text">на что ответить</p>
+  
+  <div class="photo-block">
+    <img src="1.jpg" alt="not founted">
+    <p class="photo-text clickable-text" onclick="openModal('1.jpg')">смерть в нищите</p>
+  </div>
+
+  <div class="photo-block2">
+    <img src="2.jpg" alt="not founted">
+    <p class="photo-text2 clickable-text" onclick="openModal('2.jpg')">смерть в богатстве</p>
+  </div>
+  
+  <div class="photo-block3">
+    <img src="3.jpg" alt="not founted">
+    <p class="photo-text3 clickable-text" onclick="openModal('3.jpg')">кто, кто звонит?</p>
+  </div>
+
+  <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+
+  <script src="modal.js"></script>
+</body>
+</html>
